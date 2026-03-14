@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produk HOSTING RIKSA</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background: linear-gradient(135deg,#0f001f,#1a0033,#2b0050);
+color:white;
+}
+
+/* LOADING */
+#loading{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:black;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.loader{
+width:60px;
+height:60px;
+border:6px solid #444;
+border-top:6px solid #a855ff;
+border-radius:50%;
+animation:spin 1s linear infinite;
+margin-bottom:20px;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+.loading-text{
+font-size:18px;
+text-align:center;
+color:#c084fc;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:30px;
+}
+
+.profile{
+width:120px;
+height:120px;
+border-radius:50%;
+border:4px solid #a855ff;
+box-shadow:0 0 20px #a855ff;
+object-fit:cover;
+}
+
+h1{
+margin-top:15px;
+color:#c084fc;
+}
+
+/* PRODUK */
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(168,85,255,0.5);
+border-radius:15px;
+padding:20px;
+box-shadow:0 0 15px rgba(168,85,255,0.5);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 25px #a855ff;
+}
+
+.card h2{
+color:#c084fc;
+margin-bottom:10px;
+}
+
+.price{
+margin:5px 0;
+}
+
+/* TELEGRAM BUTTON */
+
+.telegram{
+display:block;
+text-align:center;
+margin:40px;
+}
+
+.telegram a{
+background:#a855ff;
+padding:15px 30px;
+border-radius:10px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+box-shadow:0 0 15px #a855ff;
+}
+
+.telegram a:hover{
+background:#9333ea;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- LOADING -->
+<div id="loading">
+<div class="loader"></div>
+<div class="loading-text">
+Hallo SELAMAT DATANG DI WEBSITE KEBUTUHAN HOSTING RIKSAA<br>
+
+</div>
+</div>
+
+<header>
+
+<img src="poto.jpg" class="profile">
+
+<h1>SELAMAT DATANG DI WEBSITE RIKSA </h1>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Sale Panel Pterodactyl</h2>
+<p class="price">5GB : 3.000</p>
+<p class="price">10GB : 5.000</p>
+<p class="price">Unlimited : 7.000</p>
+<p class="price">Reseller : 5.000</p>
+</div>
+
+<div class="card">
+<h2>Partner Pribadi</h2>
+<p>Price : 15.000</p>
+<p>Get All Benefit</p>
+<p>Seller SC Attack Titan</p>
+<p>Seller SC Crow Invisible</p>
+<p>Seller APK Atheria</p>
+</div>
+
+<div class="card">
+<h2>Restock VPS</h2>
+<p>Ram 16 Core 4 : 5.000</p>
+<p>Ram 16 Core 8 : 7.000</p>
+<p>Ram 32 Core 8 : 10.000</p>
+</div>
+
+<div class="card">
+<h2>SC Vender Verse</h2>
+<p>Pull Up : 15.000</p>
+<p>Reseller : 25.000</p>
+<p>Partner : 35.000</p>
+<p>Moderator : 50.000</p>
+</div>
+
+</div>
+
+<div class="telegram">
+
+<a href="https://t.me/OmbakMeledakFrooooll" target="_blank">
+Beli via Telegram
+</a>
+
+</div>
+
+<script>
+
+setTimeout(function(){
+document.getElementById("loading").style.display="none";
+},3000);
+
+</script>
+
+</body>
+</html>
